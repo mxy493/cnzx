@@ -101,7 +101,7 @@ var Diaspora = {
                 Diaspora.player();
                 $('#top').show();
                 comment = $("#gitalk-container");
-                if (comment.data('ae') == true){
+                if (comment.data('enable') == true && comment.data('ae') == true){
                     comment.click();
                 }
             }, 0)
@@ -143,8 +143,8 @@ var Diaspora = {
         var sourceSrc= $("#audio source").eq(0).attr('src')
         if (sourceSrc == '' && p[0].src == ''){
             audiolist = $('#audio-list li');
-            mp3 = audiolist.eq([Math.floor(Math.random() * audiolist.size())])
-            p[0].src = mp3.data('url')
+            music = audiolist.eq([Math.floor(Math.random() * audiolist.size())])
+            p[0].src = music.data('url')
         }
 
         if (p.eq(0).data("autoplay") == true) {
@@ -618,8 +618,6 @@ $(function() {
 					$(".comment").removeClass("link")
 					gitalk.render('gitalk-container')
 					Diaspora.loaded();
-				}else{
-					$('#gitalk-container').html("评论已关闭");
 				}
                 return false;
                 break;
@@ -630,7 +628,7 @@ $(function() {
     })
     // 是否自动展开评论
     comment = $("#gitalk-container");
-    if (comment.data('ae') == true){
+    if (comment.data('enable') == true && comment.data('ae') == true){
         comment.click();
     }
 		

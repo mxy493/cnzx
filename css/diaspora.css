@@ -172,7 +172,7 @@ body.mu .icon-logo {color:#333;}
 .timeline-item time {position:absolute;left:0;top:50%;transform:translateY(-50%);display:inline-block;font-weight:300;color:#616161;width:100px}
 .timeline-item a {color:#212121;font-weight:400;transition:all .3s ease}
 .timeline-item::before {width:9px;height:9px;border-width:2px;left:-38px}
-#container {padding-bottom:100px;overflow:hidden;position:relative;}
+#container {padding-bottom:0px;overflow:hidden;position:relative;}
 #container:before {content:'';display:block;width:1px;height:200%;position:absolute;left:50%;background:#eaeaea;top:-50%;z-index:0;}
 #primary {position:relative;}
 #single {background:#fff;position:relative;overflow-x:hidden;}
@@ -352,7 +352,7 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   #vibrant polygon {transform:translateX(-10%);-moz-transform:translateX(-10%);-webkit-transform:translateX(-10%);}
   #post0 {width:40%;}
   #post0 h2 {font-size:20px;}
-  .post {width:100%;margin-top:60px;background:#fff;padding-bottom:30px;border-bottom:1px solid #eaeaea;}
+  .post {width:100%;margin-top:60px;background:#fff;padding-bottom:30px;}
   .post > a {display:block;margin:0 auto;width:100%;height:auto;}
   .post > a img {margin:0 auto;}
   .else {height:auto;position:static;width:100%;margin:0 auto;background:transparent;border:none;}

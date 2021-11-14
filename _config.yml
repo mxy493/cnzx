@@ -144,3 +144,7 @@ deploy:
   repository: https://github.com/mxy493/cnzx.git
   branch: main
   message: update {{date}}
+
+backup:
+  repository:
+    github: git@github.com:mxy493/cnzx.git,backup

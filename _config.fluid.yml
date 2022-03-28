@@ -133,6 +133,12 @@ color:
   # Color in dark mode, the same below
   body_bg_color_dark: "#181c27"
 
+  # 滚动条颜色
+  scrollbar_color: "#c4c6c9"
+  scrollbar_color_dark: "#687582"
+  scrollbar_hover_color: "#a6a6a6"
+  scrollbar_hover_color_dark: "#9da8b3"
+
   # 顶部菜单背景色
   # Color of navigation bar background
   navbar_bg_color: "#958AA3"
@@ -211,6 +217,7 @@ custom_html: ''
 # Analysis of website visitors
 web_analytics:  # 网页访问统计
   enable: false
+  ignore_local: false
 
   # 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串
   # Baidu analytics, get the string behind `hm.js?`
@@ -369,6 +376,7 @@ scroll_top_arrow:
 # Open Graph metadata
 # See: https://hexo.io/docs/helpers.html#open-graph
 open_graph:
+  enable: true
   twitter_card: summary_large_image
   twitter_id:
   twitter_site:
@@ -1001,4 +1009,4 @@ static_prefix:
 
   twikoo: https://cdn.jsdelivr.net/npm/twikoo@1/dist/
 
-  hint: /lib/hint/
+  hint: https://cdn.jsdelivr.net/npm/hint.css@2/
